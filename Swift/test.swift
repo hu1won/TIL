@@ -102,3 +102,4 @@ return resultRegion(target)
 inRange(ownPosition: Position(x: 5, y: 5), target: Position(x: 7, y: 7), friendly: Position(x: 1, y: 1), range: 10) // true
 inRange(ownPosition: Position(x: 5, y: 5), target: Position(x: 6, y: 6), friendly: Position(x: 1, y: 1), range: 10) // false
 inRange(ownPosition: Position(x: 5, y: 5), target: Position(x: 8, y: 8), friendly: Position(x: 7, y: 7), range: 10) // true
+
