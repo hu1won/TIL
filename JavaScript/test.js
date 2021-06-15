@@ -21,4 +21,5 @@ if (true) {
 console.log(txt1_1);
 //console.log(txt2_2);  //error
 //txt3 = 'world'; //error
+
 console.log(txt3);
