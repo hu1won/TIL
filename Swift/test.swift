@@ -52,7 +52,6 @@ func shift(offset: Position, region: Region) -> Region {
 }
 
 shift(Position(x: 2, y: 2), circle(10))(Position(x: 5, y: 5))
-
 var checkFn = shift(Position(x: 2, y: 2), circle(10))
 checkFn(Position(x: 5, y: 5))
 
