@@ -15,4 +15,6 @@ func main() {
 			fmt.Println(i)           // 숫자 출력
 		}
 	}
+	
 }
+
