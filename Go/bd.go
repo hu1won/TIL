@@ -8,9 +8,7 @@ const s string = "constant"
 
 func main(){
 
-
   fmt.Println(s)
-
 
   //const문은 어디서나 var문 캔을 표시 할 수 있습니다.
   const n = 500000000
