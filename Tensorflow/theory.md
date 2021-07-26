@@ -132,3 +132,4 @@ A = 2x3 / B = 3x2 / C = 2x2
 
 참고 : https://process-mining.tistory.com/98
        https://eair.tistory.com/16
+       https://lee-soohyun.tistory.com/25
