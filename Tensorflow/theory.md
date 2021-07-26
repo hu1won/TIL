@@ -106,13 +106,34 @@ A = 2x3 / B = 3x2 / C = 2x2
 
 ### 8.	Input feature shape이 2차원일 경우 row와 column은 어떤 수를 의미하는지 설명하라.
 
+row - 예측 클래스 수
+
+column - 실제 클래스 수
+
 ### 9.	Linear function또는 linear layer은 무엇인가?   
 
 ### 10.	Activation function은 왜 필요한가?
 
+활성화 함수 (activation function)은 신경망의 output을 결정하는 식(equation)입니다.
+
+각 뉴런은 가중치(weight)를 가지고 있으며 이것은 input number와 곱해져 다음 레이어로 전달하게 됩니다.
+
+이때, 활성화 함수는 현재 뉴런의 input을 feeding 하여 생성된 output이 다음 레이어로 전해지는 과정 중 역할을 수행하는 수학적인 게이트(gate)라고 할 수 있습니다.
+
+이 함수들은 신경망의 각 뉴런(neuron)에 붙어 있으며 뉴런의 input이 모델의 예측과 관련이 있는지 없는지를 근거로 이것을 활성화할지 활성화하지 않을지 결정합니다.
+
+또한, 활성화 함수는 각 뉴런의 output을 0과 1 또는 -1과 1 사이로 normalization 하여 모델이 복잡한 데이터를 학습하는 데 도움을 줍니다.
+
 ### 11.	Forward pass, backward pass 계산 예시를 작성하라.
 
 ### 12.	Sigmoid를 그래프로 표현하고, sigmoid의 미분도 그래프로 표현하라. 
+
+![77](https://user-images.githubusercontent.com/71807924/126962772-2426d57f-8def-4618-8128-015e3673df0a.PNG)
+
+sigmoid 미분 그래프
+
+![image](https://user-images.githubusercontent.com/71807924/126962978-9550428c-6b30-43f6-83b8-91637af8d59f.png)
+
 
 ### 13.	Cross entropy function는 어떤 supervised learning 문제에 어떻게 사용되나?
 
@@ -133,3 +154,4 @@ A = 2x3 / B = 3x2 / C = 2x2
 참고 : https://process-mining.tistory.com/98
        https://eair.tistory.com/16
        https://lee-soohyun.tistory.com/25
+       https://developers.google.com/machine-learning/glossary?hl=ko
