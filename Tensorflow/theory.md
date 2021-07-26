@@ -24,9 +24,15 @@ Label - 예측하는 항목 ( 선형 회귀의 y 변수 )
 
 ##### 정답지라고도 불리듯이 답이 명확하게 정해져 있는 값이다.
 
-ground-truth - 
+![realcat](https://user-images.githubusercontent.com/71807924/126958531-9abae963-3253-46f9-a7d0-137aa7a87c56.jpg)
+
+ground-truth - 기상학에서 유래된 용어로 어느한 장소에서 수집된 정보를 의미합니다.
 
 #####  '우리가 정한 정답', '우리의 모델이 우리가 원하는 답으로 예측해주길 바라는 답'
+
+##### 예를 들어, 아래 사진이 모델을 훈련시킬 데이터로 사용된다고 해보자. 사진은 고양이 분장을 한 사람이다. 이 사진에 대한 label, 즉 정답은 없다. 사람인 것도, 고양인 것도 아니다. 하지만 우리는 우리의 분류모델이 이를 '고양이'로 분류하길 원한다. 그리하여 이 데이터에 대한 "ground-truth" 값은 우리가 원하는 답인 '고양이'가 된다.
+
+![cat](https://user-images.githubusercontent.com/71807924/126957802-adf2a42b-78a3-4aa7-8131-7b962eef0d60.PNG)
 
 ### 4.	Chain rule 정의하고 chain rule을 사용한 예시 미분 문제를 만들어 풀이과정을 작성하라.
 
@@ -67,3 +73,4 @@ A = 2x3 / B = 3x2 / C = 2x2
 ### 20. Relu activation function을 설명하고, sigmoid 대비 Relu의 장점을 설명하라. Hint: multi-layer model, chain rule, gradient 
 
 참고 : https://process-mining.tistory.com/98
+       https://eair.tistory.com/16
