@@ -2,7 +2,7 @@
 
 Supervised Learning은 한 줄로 요약하면 맞춰야 하는 값이 있는 것을 말한다.
 
-•	분류: 예측하는 값이 Categorical한 것을 말한다. 이 예측하는 값은 합격여부처럼 예/아니오로 답이 나올 수도 있고, 어떤 사람의 출신 지역을 예측하는 것처럼 여러 가지 값이 될 수도 있다. 이 때, 앞의 경우처럼 예측 값이 두 개인 경우를 binary classifiaction, 뒤의 경우를 multi-class classification이라고 한다. 이의 예시로는 Supoort Vector Machine, Logistic Regression 등이 있다.
+#### •	분류: 예측하는 값이 Categorical한 것을 말한다. 이 예측하는 값은 합격여부처럼 예/아니오로 답이 나올 수도 있고, 어떤 사람의 출신 지역을 예측하는 것처럼 여러 가지 값이 될 수도 있다. 이 때, 앞의 경우처럼 예측 값이 두 개인 경우를 binary classifiaction, 뒤의 경우를 multi-class classification이라고 한다. 이의 예시로는 Supoort Vector Machine, Logistic Regression 등이 있다.
 
 •	회귀: 예측하는 값이 Continuous한 것을 말한다. 위에서 든 예시처럼 집값이 얼마가 될지 예측하는 것 등이 이에 해당한다.
 
