@@ -7,7 +7,9 @@ Unsupervised Learning은 supervised learning과 반대되는 개념으로, 맞�
 •	Clustering: 위에서 든 예시와 같이 비슷한 것들을 묶는 것을 말한다. K-means clustering, DBSCAN, SOM 등 다양한 알고리즘들이 존재한다.
 •	Association Rule (연관 규칙): 어떤 사건이 얼마나 자주 함께 발생하는지, 서로 얼마나 연관되어 있는지를 분석하는 것을 말한다. 
 
-### 2.	Loss function이 왜 필요한지 설명하라.
+### 2.	Loss function이 왜 필요한가?
+
+손실함수는 신경망을 학습할 때 학습 상태에 대해 측정하는 하나의 지표로 사용한다. 신경망의 가중치 매개변수들이 스스로 특징을 찾아 가기에 이 가중치 값의 최적이 될 수 있도록 해야 하며 잘 찾아가고 있는지 볼 때 손실 함수를 보는 것이다.
 
 ### 3.	Feature과 label/groundtruth이 무엇인지 예시를 들어 설명하라.
 
