@@ -36,6 +36,64 @@ ground-truth - 기상학에서 유래된 용어로 어느한 장소에서 수집
 
 ### 4.	Chain rule 정의하고 chain rule을 사용한 예시 미분 문제를 만들어 풀이과정을 작성하라.
 
+chain rule - 두 함수를 합성한 합성 함수의 도함수(derivative)에 관한 공식이다.
+
+함수 y = f(x)와 함수 z = g(y)를 합성한 함수 ![11](https://user-images.githubusercontent.com/71807924/126959406-1ac1074b-eb21-4b2e-97c7-c1f684478737.PNG) 의 미분법은 다음과 같다.
+
+![22](https://user-images.githubusercontent.com/71807924/126959468-743d388f-1fbb-4fa8-a55e-fe90c31abfbd.PNG)
+
+위의 식에서의 g'(y) = g'(f(x))를 뜻하고, 두 함수 f(x), g(y)가 모두 미분가능한 함수라는 것을 가정한다. 
+
+합성 함수의 미분 공식은 다음과 같이 쓸 수 있다.
+
+![33](https://user-images.githubusercontent.com/71807924/126959542-98a7e644-1301-4940-9b2c-e79255677248.PNG)
+
+이와 같이 그 공식이 마치 사슬이 이어져 있는 것 같다 해서, 합성함수의 미분 공식을 연쇄법칙이라고도 한다.
+
+##### chain rule = 연쇄법칙 = 합성함수의 미분법. 
+
+##### 합성함수의 미분은 합성함수를 구성하는 각 함수의 미분으로 곱으로 나타낼 수 있다.
+
+예시 - ![44](https://user-images.githubusercontent.com/71807924/126959786-9c789b85-b387-477f-a13b-5ad1c3f29061.PNG)
+
+위와 같은 합성 함수가 있다. 이 식은 아래와 같이 두 개의 식으로 나눌 수 있다.
+
+![55](https://user-images.githubusercontent.com/71807924/126959991-9459f5f6-5e98-4701-a331-08061878046d.PNG)
+
+여기서 chain rule은
+
+![33](https://user-images.githubusercontent.com/71807924/126960300-71525e94-6bed-4cd6-8ffd-3648f3bd5e1b.PNG)
+
+dz가 각각 분모와 분자에 있어서 삭제해보면? 왼쪽 부분과 똑같은 모습이 된다. dL/dx를 따로 구하지말고, dL/dz와 dz/dx를 구해놓고 그걸 곱하면 dL/dx가 된다는 것이다.
+
+L은 최종 출력값, z는 function에서 내보낸 값.
+
+(x에 대해 편미분) = 1 (x에 대한 편미분이라 y는 상수로 취급되어서 값이 0이 되고, x의 지수인 1만 폴짝 뛰어내려서 1이 된다.)
+
+(y에 대해 편미분) = 1 (y에 대한 미분이라 x는 상수로 취급, 값이 0이 되고, y의 지수인 1만 폴짝 뛰어내려서 1이 된다.)
+
+feedforward를 할 때 수식은 x * W + b이다. ReLU를 제외하고 일단 이 부분만 backprop으로 구현해보면..
+
+![66](https://user-images.githubusercontent.com/71807924/126960565-7091bfb3-6ea1-471d-b2c7-04ad362a1ee5.PNG)
+
+Backprop에서 cs231n의 lecture 4의 정리를 보면..
+
+add gate : gradient distributor 
+
+max gate : gradient router
+
+mul gate : gradient switcher (mul = multiplication)
+
+y 에서 b로 갈때에는 dz/dz (이건 gradient다.) 이므로 1이 된다. 둘 다 값이 같으니까.  (그런데 dL/dz가 되면 다를 수 있다.)
+
++b에서 * (multiplication node)로 갈 때, add 연산은 그냥 흘려보낸다. 뭘 하든 * 1이기 때문에 그냥 같은 값을 보내면 된다. 
+
+* 에서 x로 갈 때와 W로 갈 때에는 x로 보낼때는 W값 * 흘러들어온 값을, W로 보낼때는 x값 * 흘러들어온 값을 해서 보낸다. 
+
+(위의 mul gate가 gradient switcher라고 불리는 이유)
+
+그래서 x = W * 흘러들어온 값(여기에서는 1) 이 되고, W = x * 흘러들어온 값이 되어서, x로 보내지는 값은 W, W로 보내지는 값은 x가 된다. 
+
 ### 5.	Partial derivative/differentiation을 설명하고 예시 문제를 만들어 풀이과정을 작성하라.
 
 ### 6.	Gradient descent?
