@@ -18,6 +18,16 @@ Unsupervised Learning은 supervised learning과 반대되는 개념으로, 맞�
 
 ### 3.	Feature과 label/groundtruth이 무엇인지 예시를 들어 설명하라.
 
+Feature - 샘플을 잘 설명하는 특징, 특성 ( 선형 회귀의 x 변수 )
+
+Label - 예측하는 항목 ( 선형 회귀의 y 변수 )
+
+##### 정답지라고도 불리듯이 답이 명확하게 정해져 있는 값이다.
+
+ground-truth - 
+
+#####  '우리가 정한 정답', '우리의 모델이 우리가 원하는 답으로 예측해주길 바라는 답'
+
 ### 4.	Chain rule 정의하고 chain rule을 사용한 예시 미분 문제를 만들어 풀이과정을 작성하라.
 
 ### 5.	Partial derivative/differentiation을 설명하고 예시 문제를 만들어 풀이과정을 작성하라.
