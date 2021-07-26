@@ -128,7 +128,9 @@ column - 실제 클래스 수
 
 ### 12.	Sigmoid를 그래프로 표현하고, sigmoid의 미분도 그래프로 표현하라. 
 
-![77](https://user-images.githubusercontent.com/71807924/126962772-2426d57f-8def-4618-8128-015e3673df0a.PNG)
+sigmoid 그래프
+
+![image](https://user-images.githubusercontent.com/71807924/126963184-e31b9101-663b-49d9-af46-142d5a33931d.png)
 
 sigmoid 미분 그래프
 
