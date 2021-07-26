@@ -165,7 +165,9 @@ epoch - 딥러닝에서 epoch는 전체 트레이닝 셋이 신경망을 통과�
 
 ### 20. Relu activation function을 설명하고, sigmoid 대비 Relu의 장점을 설명하라. Hint: multi-layer model, chain rule, gradient 
 
-참고 : https://process-mining.tistory.com/98
+참고 : 
+
+       https://process-mining.tistory.com/98
 
        https://eair.tistory.com/16
        
