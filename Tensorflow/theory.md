@@ -4,13 +4,13 @@ Supervised Learning은 한 줄로 요약하면 맞춰야 하는 값이 있는 �
 
 ##### •	분류: 예측하는 값이 Categorical한 것을 말한다. 이 예측하는 값은 합격여부처럼 예/아니오로 답이 나올 수도 있고, 어떤 사람의 출신 지역을 예측하는 것처럼 여러 가지 값이 될 수도 있다. 이 때, 앞의 경우처럼 예측 값이 두 개인 경우를 binary classifiaction, 뒤의 경우를 multi-class classification이라고 한다. 이의 예시로는 Supoort Vector Machine, Logistic Regression 등이 있다.
 
-•	회귀: 예측하는 값이 Continuous한 것을 말한다. 위에서 든 예시처럼 집값이 얼마가 될지 예측하는 것 등이 이에 해당한다.
+##### •	회귀: 예측하는 값이 Continuous한 것을 말한다. 위에서 든 예시처럼 집값이 얼마가 될지 예측하는 것 등이 이에 해당한다.
 
 Unsupervised Learning은 supervised learning과 반대되는 개념으로, 맞춰야 하는 target value(label)가 없는 것을 말한다. label이 없는 것에 대한 문제를 해결하는 것을 unsupervised learning이라고 한다. 이에는 다음과 같은 것들이 포함된다.
 
-•	Clustering: 위에서 든 예시와 같이 비슷한 것들을 묶는 것을 말한다. K-means clustering, DBSCAN, SOM 등 다양한 알고리즘들이 존재한다.
+##### •	Clustering: 위에서 든 예시와 같이 비슷한 것들을 묶는 것을 말한다. K-means clustering, DBSCAN, SOM 등 다양한 알고리즘들이 존재한다.
 
-•	Association Rule (연관 규칙): 어떤 사건이 얼마나 자주 함께 발생하는지, 서로 얼마나 연관되어 있는지를 분석하는 것을 말한다. 
+##### •	Association Rule (연관 규칙): 어떤 사건이 얼마나 자주 함께 발생하는지, 서로 얼마나 연관되어 있는지를 분석하는 것을 말한다. 
 
 ### 2.	Loss function이 왜 필요한가?
 
