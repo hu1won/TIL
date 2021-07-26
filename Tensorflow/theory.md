@@ -22,7 +22,9 @@ Unsupervised Learning은 supervised learning과 반대되는 개념으로, 맞�
 
 ### 5.	Partial derivative/differentiation을 설명하고 예시 문제를 만들어 풀이과정을 작성하라.
 
-### 6.	Gradient descent을 설명하고 예시 문제를 만들어 update을 1번 진행하라.
+### 6.	Gradient descent?
+
+최적의 가중치와 편향을 찾기위해서 학습을 진행하며 손실함수가 최솟값을 갖도록 하는 것이다. 가중치의 차원이 커질수록 이 손실함수의 최솟값을 갖는 지점을 찾는 것은 어려워진다. 기울기를 이용해서 함수의 최솟값이 어디에 있는지 찾는 것이며 이를 경사하강법이라고 한다.
 
 ### 7.	AB=C 예시 matrix multiplication문제를 만들어 풀이과정을 작성하라. A는 2x3, B는 ?x?, C는 ?x2 shape을 가지고 있다. 모델 shape은 어떤 shape을 가져야 하며, 왜 그런 shape을 가져야 하는 지 설명하라.
 
