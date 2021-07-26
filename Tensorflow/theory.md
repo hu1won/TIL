@@ -143,7 +143,15 @@ sigmoid 미분 그래프
 
 ### 15.	Entropy를 설명하라. 어떤 정보가 의미 있는 정보인가?
 
+엔트로피는 불순도를 수치화한 지표 중 하나이며, 확률 변수의 불확실성을 수치로 나타낸 것이다. 또한, 정보량의 기댓값이라고 할 수 있다.
+
+의사결정나무를 시각화하면 의사결정나무의 노드에 엔트로피라는 것을 볼 수 있는데, 이 엔트로피의 값에 따라 의사결정나무의 분류가 일어나는 것을 확인할 수 있다.
+
 ### 16.	Softmax는 어디에 필요하며 왜 필요한가?
+
+Softmax(소프트맥스)는 입력받은 값을 출력으로 0~1사이의 값으로 모두 정규화하며 출력 값들의 총합은 항상 1이 되는 특성을 가진 함수이다.
+
+기계 학습 학습의 특성상 수만 개의 학습 데이터 샘플이 필요하다. Softmax는 간결한 기능을 최적화하여 각 요소를 처리한다.
 
 ### 17.	Local minima 문제를 설명하라.
 
@@ -151,9 +159,20 @@ sigmoid 미분 그래프
 
 ### 19.	Training size (학습 데이터 수), batch size, epoch의 관계를 설명하라.
 
+batch size - batch size란 정확히 무엇을 의미할까요? 전체 트레이닝 데이터 셋을 여러 작은 그룹을 나누었을 때 batch size는 하나의 소그룹에 속하는 데이터 수를 의미합니다. 전체 트레이닝 셋을 작게 나누는 이유는 트레이닝 데이터를 통째로 신경망에 넣으면 비효율적이 리소스 사용으로 학습 시간이 오래 걸리기 때문입니다.
+
+epoch - 딥러닝에서 epoch는 전체 트레이닝 셋이 신경망을 통과한 횟수 의미합니다. 예를 들어, 1-epoch는 전체 트레이닝 셋이 하나의 신경망에 적용되어 순전파와 역전파를 통해 신경망을 한 번 통과했다는 것을 의미합니다.
+
 ### 20. Relu activation function을 설명하고, sigmoid 대비 Relu의 장점을 설명하라. Hint: multi-layer model, chain rule, gradient 
 
 참고 : https://process-mining.tistory.com/98
+
        https://eair.tistory.com/16
+       
        https://lee-soohyun.tistory.com/25
+       
        https://developers.google.com/machine-learning/glossary?hl=ko
+       
+       https://deepinsight.tistory.com/113
+       
+       https://subinium.github.io/data-size-and-ml-model/
