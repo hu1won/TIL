@@ -86,13 +86,13 @@ mul gate : gradient switcher (mul = multiplication)
 
 y 에서 b로 갈때에는 dz/dz (이건 gradient다.) 이므로 1이 된다. 둘 다 값이 같으니까.  (그런데 dL/dz가 되면 다를 수 있다.)
 
-+b에서 * (multiplication node)로 갈 때, add 연산은 그냥 흘려보낸다. 뭘 하든 * 1이기 때문에 그냥 같은 값을 보내면 된다. 
++b에서 multiplication node로 갈 때, add 연산은 그냥 흘려보낸다. 뭘 하든 multiplication node 1이기 때문에 그냥 같은 값을 보내면 된다. 
 
-* 에서 x로 갈 때와 W로 갈 때에는 x로 보낼때는 W값 * 흘러들어온 값을, W로 보낼때는 x값 * 흘러들어온 값을 해서 보낸다. 
+multiplication node에서 x로 갈 때와 W로 갈 때에는 x로 보낼때는 W값 multiplication node 흘러들어온 값을, W로 보낼때는 x값 multiplication node 흘러들어온 값을 해서 보낸다. 
 
 (위의 mul gate가 gradient switcher라고 불리는 이유)
 
-그래서 x = W * 흘러들어온 값(여기에서는 1) 이 되고, W = x * 흘러들어온 값이 되어서, x로 보내지는 값은 W, W로 보내지는 값은 x가 된다. 
+그래서 x = W multiplication node 흘러들어온 값(여기에서는 1) 이 되고, W = x multiplication node 흘러들어온 값이 되어서, x로 보내지는 값은 W, W로 보내지는 값은 x가 된다. 
 
 ### 5.	Partial derivative/differentiation을 설명하고 예시 문제를 만들어 풀이과정을 작성하라.
 
